@@ -1,11 +1,11 @@
 import React from 'react'
+import Starter from './sections/Starter';
+
 
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        
-      </header>
+        <Starter/>
     </div>
   );
 }
