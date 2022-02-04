@@ -1,7 +1,7 @@
 @import '../../styles/utils/colors.scss';
 
 .main-container{
-    margin: 0 10%;
+    margin: 0 5%;
     .container{
         display: grid;
         grid-template-columns: repeat(2,1fr);
@@ -20,8 +20,9 @@
             }
             .button-container{
                 display: flex;
-                .button{
+                Button{
                     margin-right: 1rem;
+                    
                 }
             }
         }
@@ -32,4 +33,12 @@
             }
         }
     }
+}
+@media screen and (min-width:320px) and(max-width:768px) {
+    .main-container{
+        .container{
+            grid-template-columns: 1fr;
+        }
+    }
+    
 }

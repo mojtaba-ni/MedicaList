@@ -19,7 +19,7 @@ const Starter = () => {
                         A professional web and mobile app development agency  with over 100+ web and app develop.
                         We provide a high-quality service in web and mobile app development  as well as in design.
                     </p>
-                    <div className="botton-container">
+                    <div className="button-container">
                         <Button content="Watch Video" icon={<GoPlay/>}/>
                         <Button content="Request Quote" icon={<HiOutlineArrowNarrowRight/>} color='pink'/>
                     </div>
