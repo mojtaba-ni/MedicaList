@@ -1,0 +1,40 @@
+@import '../utils/colors.scss';
+
+.about-container{
+    background-color: $backgroundOtherColor;
+    padding: 1.2rem 0;
+   .container{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    gap: 3rem;
+    margin: 0 5%;
+    
+    .details{
+        p{
+            color: $lightFontColor;
+            line-height: 1.4rem;
+            font-size: large;
+            text-align: justify;
+            width: 90%;
+        }
+        Button{
+            margin-top: 2rem;
+        }
+    }
+    .cards{
+        display: grid;
+        grid-template-columns: repeat(2,1fr);
+        gap: 1.5rem;
+    }
+    
+   }
+
+}
+@media screen and(min-width:320px) and(max-width:768px){
+    .about-container{
+        .container{
+            grid-template-columns: 1fr;
+            gap: 2rem;
+        }
+    }
+}
