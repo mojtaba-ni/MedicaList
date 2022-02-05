@@ -14,7 +14,7 @@
     transition: 0.4s ease-in-out;
 
     .logo{
-        background-color: #f32a8f33;
+        background-color: $logoBackground;
         height: 4rem;
         width: 4rem;
         display: flex;
@@ -23,14 +23,14 @@
         border-radius: 0.4rem;
 
         svg{
-            color: #f32a8f;
+            color: $pinkColor;
             font-size: 1.4rem;
         }
     }
     .card-title{
         margin-bottom: 1rem;
         font-size: x-large;
-        color: rgb(18, 18, 88);
+        color: $headingColor;
     }
     &:hover{
         box-shadow: #f32a8f2f 5px 5px,#f32a8f1e 10px 10px,#f32a8f02 15px 15px;
