@@ -1,0 +1,56 @@
+@import '../utils/colors.scss';
+
+.blog-container{
+    height:100%;
+    width: 100%;
+    background-color: white;
+    border-radius: 0.4rem;
+    transition: 0.4s ease-in-out;
+    box-shadow: rgba(0,0,0,0.15) 0px 5px 15px 0px;
+
+    &:hover{
+        box-shadow: #f32a8f2f 5px 5px,#f32a8f1e 10px 10px,#f32a8f02 15px 15px;
+    }
+    .container{
+        margin-top: 1rem;
+        .image{
+            img{
+                height: 13rem;
+                width: 100%;
+            }
+        }
+        .content{
+            .title{
+                margin-top: 1rem;
+                h3{
+                    color:$headingColor;
+                }
+            }
+            .subTitle{
+                p{
+                    color: $lightFontColor;
+                }
+            }
+            .button{
+                display: flex;
+                justify-content: center;
+                align-items: center;
+            }
+        }
+
+       
+    }
+}
+@media screen and (min-width:320px) and(max-width:1100px) {
+    .blog-container{
+        .container{
+            .image{
+                img{
+                    height: 15rem;
+                    width: 100%;
+                }
+            }
+        }
+    }
+    
+}
