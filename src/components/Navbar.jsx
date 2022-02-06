@@ -24,19 +24,16 @@ const Navbar = () => {
             <div className="links">
                 <ul>
                     <li>
-                        <a href="#">About</a>
+                        <a href="#about">About</a>
                     </li>
                     <li>
-                        <a href="#">Service</a>
+                        <a href="#service">Service</a>
                     </li>
                     <li>
-                        <a href="#">Testimonal</a>
+                        <a href="#testimonial">Testimonial</a>
                     </li>
                     <li>
-                        <a href="#">Blog</a>
-                    </li>
-                    <li>
-                        <a href="#"></a>
+                        <a href="#blog">Blog</a>
                     </li>
                     <li>
                         <Button content="Contact" />

@@ -9,7 +9,7 @@ import Blog from '../components/Blog';
 
 const Blogs = () => {
   return (
-    <div className='blog-container'>
+    <div className='blog-container' id='blog'>
         <div className="container">
             <div className="title-container">
                 <Title title="Blogs" color="blue" LineCenter={true} />

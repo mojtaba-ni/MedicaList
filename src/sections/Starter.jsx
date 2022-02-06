@@ -8,7 +8,7 @@ import Navbar from '../components/Navbar';
 
 const Starter = () => {
   return (
-      <div className='main-container'>
+      <div className='main-container'id='service'>
           <Navbar/>
             <div className="container">
                 <div className='content'>

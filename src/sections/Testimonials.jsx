@@ -6,7 +6,7 @@ import "../styles/sections/Testimonials.scss"
 
 const Testimonials = () => {
   return (
-    <div className='testimonials-container'>
+    <div className='testimonials-container' id='testimonial'>
         <div className="container">
             <div className="top">
                 <Title title='Testimonials' color='blue' LineCenter={true} />
