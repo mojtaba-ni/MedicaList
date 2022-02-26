@@ -2,16 +2,21 @@ import React,{useState} from 'react';
 import Button from './Button'
 import {GiHamburgerMenu} from 'react-icons/gi'
 import {MdClose}from 'react-icons/md'
-import '../styles/components/Navbar.scss'
 import BrandName from './BrandName';
+import { motion } from 'framer-motion';
+import { navbarAnimations } from '../Animations'; 
+import { useScroll } from './useScroll';
+import '../styles/components/Navbar.scss'
+
 
 const Navbar = () => {
+    const [element,controls] = useScroll()
     const [toggleNavbar,setToggleNavbar ] = useState(false);
     const HandleToggleNavbar = () =>{
         setToggleNavbar(!toggleNavbar)
     }
   return (
-    <div className={`navbar ${toggleNavbar===true ? "active" : ""}`}>
+    <motion.div className={`navbar ${toggleNavbar===true ? "active" : ""}`} variants={navbarAnimations}  transition={{delay:0.4}}>
         <div className="col">
             <BrandName/>
             <div className="collapseble-button">
@@ -41,7 +46,7 @@ const Navbar = () => {
                 </ul>
             </div>
         </nav>
-    </div>
+    </motion.div>
   )
 };
 

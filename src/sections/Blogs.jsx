@@ -1,40 +1,48 @@
 import React from 'react';
+import { motion } from 'framer-motion';
 import Title from '../components/Title'
 import Button from '../components/Button';
 import BlogImage1 from '../assets/blogImage1.jpg'
 import BlogImage2 from '../assets/blogImage2.jpg'
 import BlogImage3 from '../assets/blogImage3.jpg'
-import '../styles/sections/Blogs.scss'
 import Blog from '../components/Blog';
+import { useScroll } from '../components/useScroll';
+import {TopAnimations} from '../Animations'
+import '../styles/sections/Blogs.scss'
+
 
 const Blogs = () => {
+    const [element,controls] = useScroll()
   return (
-    <div className='blog-container' id='blog'>
+    <div className='blog-container' id='blog' ref={element}>
         <div className="container">
-            <div className="title-container">
+            <motion.div className="title-container" animate={controls} variants={TopAnimations} transition={{delay:0.4}}>
                 <Title title="Blogs" color="blue" LineCenter={true} />
                 <p>
                     Insights and advice from our experts.
                 </p>
-            </div>
-            <div className="blogs">
+            </motion.div>
+            <div className="blogs" ref={element}>
                 <Blog
                 image={BlogImage1}
                 title="Top list off Mistakes to Avoid During MVP development "
                 subTitle="Always stay Updated with the technologies thus  we help our clients 
                 by giving the best solutions for their needs  "
+                animateCustom={controls}               
                 />
                 <Blog
                 image={BlogImage2}
                 title="A Day in the life on Developer Manager "
                 subTitle="Always stay Updated with the technologies thus  we help our clients 
                 by giving the best solutions for their needs  "
+                animateCustom={controls}
                 />
                 <Blog
                 image={BlogImage1}
                 title="How to Build a Strong Remote Work Culture "
                 subTitle="Always stay Updated with the technologies thus  we help our clients 
                 by giving the best solutions for their needs  "
+                animateCustom={controls}
                 />
             </div>
             <div className="button-container">

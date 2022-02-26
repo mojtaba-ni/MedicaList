@@ -1,14 +1,16 @@
 import React from 'react';
+import { CardAnimations } from '../Animations';
+import { motion } from 'framer-motion';
 import '../styles/components/Card.scss'
 
-const Card = ({title,Logo}) => {
+const Card = ({title,Logo,animateCustom}) => {
   return (
-    <div className='card'>
+    <motion.div className='card' animate={animateCustom} variants={CardAnimations}>
         <div className="logo">{Logo}</div>
         <div className="card-title">
             <h4>{title}</h4>
         </div>
-    </div>
+    </motion.div>
   )
 };
 

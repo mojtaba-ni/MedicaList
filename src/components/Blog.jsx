@@ -1,9 +1,11 @@
 import React from 'react';
+import { motion } from 'framer-motion';
 import Button from '../components/Button'
+import { CardAnimations } from '../Animations';
 import "../styles/components/Blog.scss"
 
-const Blog = ({image,title,subTitle}) => {
-  return <div className='blog-container'>
+const Blog = ({image,title,subTitle,animateCustom}) => {
+  return <motion.div className='blog-container' animate={animateCustom} variants={CardAnimations} transition={{delay:0.4}}>
         <div className="container">
             <div className="image">
                 <img src={image} alt="" />
@@ -20,7 +22,7 @@ const Blog = ({image,title,subTitle}) => {
                 </div>
             </div>
         </div>
-  </div>;
+  </motion.div>;
 };
 
 export default Blog;
