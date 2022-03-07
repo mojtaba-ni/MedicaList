@@ -17,17 +17,12 @@ const Navbar = () => {
     }
   return (
     <motion.div className={`navbar ${toggleNavbar===true ? "active" : ""}`} variants={navbarAnimations}  transition={{delay:0.4}}>
-        <div className="col">
-            <BrandName/>
-            <div className="collapseble-button">
-                {!toggleNavbar ? 
-                <GiHamburgerMenu onClick={HandleToggleNavbar }/> 
-                : <MdClose onClick={HandleToggleNavbar }/> }
-            </div>
-        </div>
         <nav>
             <div className="links">
                 <ul>
+                    <li>
+                        <Button content="Contact" />
+                    </li>
                     <li>
                         <a href="#about">About</a>
                     </li>
@@ -40,12 +35,17 @@ const Navbar = () => {
                     <li>
                         <a href="#blog">Blog</a>
                     </li>
-                    <li>
-                        <Button content="Contact" />
-                    </li>
                 </ul>
             </div>
         </nav>
+        <div className="col">
+            <BrandName/>
+            <div className="collapseble-button">
+                {!toggleNavbar ? 
+                <GiHamburgerMenu onClick={HandleToggleNavbar }/> 
+                : <MdClose onClick={HandleToggleNavbar }/> }
+            </div>
+        </div>
     </motion.div>
   )
 };
