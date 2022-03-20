@@ -1,15 +1,20 @@
 @import '../../styles/utils/colors.scss';
-
+.main-container.darktheme{
+    background-color: rgb(36, 34, 34);
+}
+.contentH1.darktheme{
+    color: white!important;
+}
 .main-container{
-    margin: 1% 5%;
+    padding: 1rem 5rem;
     .container{
         display: grid;
         grid-template-columns: repeat(2,1fr);
         .content{
             margin-top: 3.4rem;
-            margin-right: 3rem;
+            margin-left: 3rem;
 
-            h1{
+            .contentH1{
                 font-size: 3rem;
                 color: $headingColor;
             }
@@ -28,7 +33,7 @@
         }
         .image{
             img{
-                height: 35rem;
+                height: 31rem;
                 width: 35rem;
             }
         }

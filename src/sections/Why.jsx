@@ -1,6 +1,5 @@
 import React from 'react';
 import Title from '../components/Title';
-import {GoPlay} from 'react-icons/go'
 import { useScroll } from '../components/useScroll';
 import { motion } from 'framer-motion';
 import { TopAnimations,CardImageAnimations,WhyTitleAnimations } from '../Animations';
@@ -23,7 +22,7 @@ const Why = () => {
             <div className="content">
                 <motion.div className='' animate={controls} variants={CardImageAnimations} transition={{delay:0.3}}>
                     <div className="video">
-                        <GoPlay/>
+                        
                     </div>
                 </motion.div>
                 <motion.div className="reasons" animate={controls} variants={WhyTitleAnimations} transition={{delay:0.4, type:"tween"}} >

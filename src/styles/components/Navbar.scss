@@ -1,7 +1,11 @@
 @import '../../styles/utils/colors.scss';
 
+.navbar.darktheme{
+    background-color: gray;
+    
+ }
 .navbar{
-    margin: 2rem 0;
+    padding: 2rem 0;
     display: flex;
     justify-content: space-between;
     .col{
@@ -19,7 +23,7 @@
                 list-style-type: none;
                 justify-content: center;
                 align-items: center;
-                margin: 0.3rem 2rem;
+                margin: 0.3rem 0rem;
                 color: $lightFontColor;
 
                 li{
@@ -32,7 +36,7 @@
                         }
                     }
                     text-transform: uppercase;
-                    margin: 0 1rem;
+                    margin: 0 1.5rem;
                 }
                 
             }
@@ -45,6 +49,9 @@
         nav{
             display: block;
         }
+    }
+    .navbar.darktheme{
+       background-color: gray;
     }
     .navbar{
         flex-direction: column;
