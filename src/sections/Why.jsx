@@ -3,17 +3,19 @@ import Title from '../components/Title';
 import { useScroll } from '../components/useScroll';
 import { motion } from 'framer-motion';
 import { TopAnimations,CardImageAnimations,WhyTitleAnimations } from '../Animations';
+import { useSelector} from 'react-redux'; 
 import "../styles/sections/Why.scss"
 
 const Why = () => {
     const [element,controls] = useScroll()
+    const theme = useSelector(state=>state.theme.darkTheme)
   return (
-    <div className='why-container'>
+    <div className={`why-container ${theme===true ? "darktheme" : ""}`}>
         <div className="container" ref={element} >
             <motion.div className="top" animate={controls} variants={TopAnimations} transition={{delay:0.4}}>
                 <Title title='Why cryo?' color='pink' LineCenter={true} />
                 <div className="subTitle">
-                    <p>
+                    <p className={`subTitleP ${theme===true ? "darktheme" : ""}`}>
                         Always stay Updated with the technologies thus  we help our clients 
                         by giving the best solutions for their needs  
                     </p>
@@ -25,7 +27,7 @@ const Why = () => {
                         
                     </div>
                 </motion.div>
-                <motion.div className="reasons" animate={controls} variants={WhyTitleAnimations} transition={{delay:0.4, type:"tween"}} >
+                <motion.div className={`reasons ${theme===true ? "darktheme" : ""}`} animate={controls} variants={WhyTitleAnimations} transition={{delay:0.4, type:"tween"}} >
                     <ul>
                         <li> Over 10+ years of industry wide experience</li>
                         <li>

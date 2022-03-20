@@ -1,5 +1,15 @@
 @import '../utils/colors.scss';
-
+.why-container.darktheme{
+    background-color: $backgroundDarkColor1;
+}
+.subTitleP.darktheme{
+    color:$Pdarktheme !important;
+}
+.reasons.darktheme{
+    li{
+        color: $Pdarktheme !important;
+    }
+}
 .why-container{
     min-height: 50vh;
     .container{
@@ -18,7 +28,7 @@
                 justify-content: center;
                 align-items: center;
 
-                p{
+                .subTitleP{
                     width: 65%;
                     text-align: center;
                     color: $lightFontColor;
