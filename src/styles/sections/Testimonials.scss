@@ -1,5 +1,12 @@
 @import '../utils/colors.scss';
-
+.testimonials-container.darktheme{
+    background-color: $backgroundDarkColor2
+}
+.subTitle.darktheme{
+    p{
+        color: $Pdarktheme !important;
+    }
+}
 .testimonials-container{
     background-color: $backgroundOtherColor;
     .container{
