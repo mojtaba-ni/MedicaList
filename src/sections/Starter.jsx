@@ -24,7 +24,7 @@ const Starter = () => {
                     <h1 className={`contentH1  ${theme===true ? "darktheme" : ""}`}>
                         We Provide Sulutions to Help You to Build or Grow  Your Business !
                     </h1>
-                    <p>
+                    <p className={`containerP ${theme===true ? "darktheme" : ""}`}>
                         A professional web and mobile app development agency  with over 100+ web and app develop.
                         We provide a high-quality service in web and mobile app development  as well as in design.
                     </p>

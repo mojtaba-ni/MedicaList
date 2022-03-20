@@ -1,8 +1,10 @@
 @import '../../styles/utils/colors.scss';
-
+.titleH2.darktheme{
+    color: azure !important;
+}
 .title{
     margin-bottom: 2rem;
-    h2{
+    .titleH2{
         margin-bottom: 0.7rem;
         font-size: xx-large;
         color: $headingColor;

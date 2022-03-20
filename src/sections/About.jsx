@@ -9,22 +9,24 @@ import {SiGooglemessages} from 'react-icons/si';
 import {reveal} from  '../Animations'
 import { motion } from 'framer-motion';
 import { useScroll } from '../components/useScroll';
+import { useSelector} from 'react-redux'; 
 import '../styles/sections/About.scss'
 
 
 const About = () => {
     const [element,controls] = useScroll()
+    const theme = useSelector(state=>state.theme.darkTheme)
   return (
-      <div className='about-container' id='about' ref={element}>
+      <div className={`about-container ${theme===true ? 'darktheme' : ''}`} id='about' ref={element}>
             <div className="container">
                 <motion.div className="details" animate={controls} variants={reveal} transition={{delay:0.6,stiffness:300}}>
                     <Title title="About cryo" color="blue"/>
-                    <p>
+                    <p className={`detailsP ${theme===true ? 'darktheme' : ''}`}>
                         We believed that everyone deservesto have a Website or Online Store.
                         Innovation and simplicity make us happy. Our mission is to help people
                         achieve what they have passionate about it. 
                     </p>
-                    <p>
+                    <p className={`detailsP ${theme===true ? 'darktheme' : ''}`}>
                         We are excited to simplify  SEO  for everyone  through  software , education, or cimmunity.
                     </p>
                     <Button content="why cryo?" />

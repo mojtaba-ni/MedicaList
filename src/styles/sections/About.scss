@@ -1,5 +1,10 @@
 @import '../utils/colors.scss';
-
+.about-container.darktheme{
+    background-color: $backgroundDarkColor2;
+}
+.detailsP.darktheme{
+    color: $Pdarktheme !important;
+}
 .about-container{
     background-color: $backgroundOtherColor;
     padding: 1.2rem 0;
@@ -10,7 +15,7 @@
     margin: 0 5%;
     
     .details{
-        p{
+        .detailsP{
             color: $lightFontColor;
             line-height: 1.4rem;
             font-size: large;

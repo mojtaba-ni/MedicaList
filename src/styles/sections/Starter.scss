@@ -5,6 +5,9 @@
 .contentH1.darktheme{
     color: white!important;
 }
+.containerP.darktheme{
+    color: $Pdarktheme !important;
+}
 .main-container{
     padding: 1rem 5rem;
     .container{
@@ -18,7 +21,7 @@
                 font-size: 3rem;
                 color: $headingColor;
             }
-            P{
+            .containerP{
                 font-size: 1.4rem;
                 color: $lightFontColor;
                 line-height: 1.9rem;
