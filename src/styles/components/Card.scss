@@ -1,5 +1,10 @@
 @import '../utils/colors.scss';
-
+.card.darktheme{
+    background-color: rgb(36, 29, 29);
+}
+.card-title.darktheme{
+    color: azure !important;
+}
 .card{
     height: 8rem;
     width: 15rem;
