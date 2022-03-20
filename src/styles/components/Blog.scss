@@ -1,6 +1,18 @@
 @import '../utils/colors.scss';
-
-.blog-container{
+.blogg-container.darktheme{
+    background-color: #424046
+}
+.title.darktheme{
+    h3{
+        color: azure !important;
+    }
+}
+.subTitle.darktheme{
+    p{
+        color: $Pdarktheme !important;
+    }
+}
+.blogg-container{
     height:100%;
     width: 100%;
     background-color: white;

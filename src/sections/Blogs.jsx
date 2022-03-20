@@ -20,7 +20,7 @@ const Blogs = () => {
         <div className="container">
             <motion.div className="title-container" animate={controls} variants={TopAnimations} transition={{delay:0.4}}>
                 <Title title="Blogs" color="blue" LineCenter={true} />
-                <p>
+                <p className={`blog-containerP ${theme===true ? 'darktheme' : ''}`}>
                     Insights and advice from our experts.
                 </p>
             </motion.div>

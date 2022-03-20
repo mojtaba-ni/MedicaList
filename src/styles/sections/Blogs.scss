@@ -2,6 +2,9 @@
 .blog-container.darktheme{
     background-color: $backgroundDarkColor1;
 }
+.blog-containerP.darktheme{
+    color: $Pdarktheme !important;
+}
 .blog-container{
     .container{
         margin: 0 5%;
@@ -21,7 +24,7 @@
                 margin-bottom: 1rem;
             }
 
-            p{
+            .blog-containerP{
                 color: $lightFontColor;
             }
         }
