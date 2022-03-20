@@ -1,5 +1,7 @@
 @import '../utils/colors.scss';
-
+.blog-container.darktheme{
+    background-color: $backgroundDarkColor1;
+}
 .blog-container{
     .container{
         margin: 0 5%;

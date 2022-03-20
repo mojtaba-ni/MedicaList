@@ -8,13 +8,15 @@ import BlogImage3 from '../assets/blogImage3.jpg'
 import Blog from '../components/Blog';
 import { useScroll } from '../components/useScroll';
 import {TopAnimations} from '../Animations'
+import { useSelector} from 'react-redux'; 
 import '../styles/sections/Blogs.scss'
 
 
 const Blogs = () => {
     const [element,controls] = useScroll()
+    const theme = useSelector(state=>state.theme.darkTheme)
   return (
-    <div className='blog-container' id='blog' ref={element}>
+    <div className={`blog-container ${theme===true ? 'darktheme' : ''}`} id='blog' ref={element}>
         <div className="container">
             <motion.div className="title-container" animate={controls} variants={TopAnimations} transition={{delay:0.4}}>
                 <Title title="Blogs" color="blue" LineCenter={true} />
