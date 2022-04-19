@@ -2,9 +2,9 @@ import React from 'react';
 import { motion } from 'framer-motion';
 import Title from '../components/Title'
 import Button from '../components/Button';
-import BlogImage1 from '../assets/blogImage1.jpg'
-import BlogImage2 from '../assets/blogImage2.jpg'
-import BlogImage3 from '../assets/blogImage3.jpg'
+import BlogImage1 from '../assets/d1.jpg'
+import BlogImage2 from '../assets/d2.jpg'
+import BlogImage3 from '../assets/d3.jpg'
 import Blog from '../components/Blog';
 import { useScroll } from '../components/useScroll';
 import {TopAnimations} from '../Animations'
@@ -27,23 +27,20 @@ const Blogs = () => {
             <div className="blogs" ref={element}>
                 <Blog
                 image={BlogImage1}
-                title="Top list off Mistakes to Avoid During MVP development "
-                subTitle="Always stay Updated with the technologies thus  we help our clients 
-                by giving the best solutions for their needs  "
+                title="Alzheimer's: Loss of wake-promoting neurons may explain sleepiness "
+                subTitle="Sleep disruption is common among patients with neurodegenerative conditions. "
                 animateCustom={controls}               
                 />
                 <Blog
                 image={BlogImage2}
-                title="A Day in the life on Developer Manager "
-                subTitle="Always stay Updated with the technologies thus  we help our clients 
-                by giving the best solutions for their needs  "
+                title="Long COVID's cardiovascular implications"
+                subTitle="Millions of people worldwide live with long COVID, a condition characterized by symptoms of COVID-19 and other"
                 animateCustom={controls}
                 />
                 <Blog
-                image={BlogImage1}
-                title="How to Build a Strong Remote Work Culture "
-                subTitle="Always stay Updated with the technologies thus  we help our clients 
-                by giving the best solutions for their needs  "
+                image={BlogImage3}
+                title="What does the latest research say about multiple sclerosis?"
+                subTitle="Millions of people worldwide live with multiple sclerosis (MS), a life-altering, progressive condition. "
                 animateCustom={controls}
                 />
             </div>

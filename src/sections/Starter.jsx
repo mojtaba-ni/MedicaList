@@ -22,14 +22,14 @@ const Starter = () => {
                 </motion.div>
                 <motion.div className='content' variants={HeaderAnimations} animate={controls} transition={{delay:0.4,type:"tween"}}>
                     <h1 className={`contentH1  ${theme===true ? "darktheme" : ""}`}>
-                        We Provide Sulutions to Help You to Build or Grow  Your Business !
+                        Personal care for your healthy living
                     </h1>
                     <p className={`containerP ${theme===true ? "darktheme" : ""}`}>
-                        A professional web and mobile app development agency  with over 100+ web and app develop.
-                        We provide a high-quality service in web and mobile app development  as well as in design.
+                       From preventive care and checkups, to immunizatons and exams, our primary care physicians and providers work to keep 
+                       you and your whole Family healthy and strong each and everyday
                     </p>
                     <div className="button-container">
-                        <Button content="Watch Video" icon={<GoPlay/>}/>
+                       
                         <Button content="Request Quote" icon={<HiOutlineArrowNarrowRight/>} color='pink'/>
                     </div>
                 </motion.div>

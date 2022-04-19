@@ -13,7 +13,7 @@ const Why = () => {
     <div className={`why-container ${theme===true ? "darktheme" : ""}`}>
         <div className="container" ref={element} >
             <motion.div className="top" animate={controls} variants={TopAnimations} transition={{delay:0.4}}>
-                <Title title='Why cryo?' color='pink' LineCenter={true} />
+                <Title title='Why Medicalist?' color='pink' LineCenter={true} />
                 <div className="subTitle">
                     <p className={`subTitleP ${theme===true ? "darktheme" : ""}`}>
                         Always stay Updated with the technologies thus  we help our clients 

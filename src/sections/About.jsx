@@ -20,16 +20,14 @@ const About = () => {
       <div className={`about-container ${theme===true ? 'darktheme' : ''}`} id='about' ref={element}>
             <div className="container">
                 <motion.div className="details" animate={controls} variants={reveal} transition={{delay:0.6,stiffness:300}}>
-                    <Title title="About cryo" color="blue"/>
+                    <Title title="About Medicalist" color="blue"/>
                     <p className={`detailsP ${theme===true ? 'darktheme' : ''}`}>
-                        We believed that everyone deservesto have a Website or Online Store.
-                        Innovation and simplicity make us happy. Our mission is to help people
-                        achieve what they have passionate about it. 
+                    Many older adults share a common concern: “How can I trust the health information I find on the Internet?”
+
+                    There are thousands of medical websites. Some provide reliable health information. Some do not. Some of the medical news is current. Some of it is not. Choosing which websites to trust is an important step in gathering reliable health information.
                     </p>
-                    <p className={`detailsP ${theme===true ? 'darktheme' : ''}`}>
-                        We are excited to simplify  SEO  for everyone  through  software , education, or cimmunity.
-                    </p>
-                    <Button content="why cryo?" />
+                   
+                    <Button content="why Medicalist?" />
                 </motion.div>
                 <div className="cards" ref={element}>
                     <Card 

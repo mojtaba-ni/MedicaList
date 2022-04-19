@@ -15,11 +15,10 @@ const Testimonials = () => {
     <div className={`testimonials-container ${theme===true ? 'darktheme' : ''}`} id='testimonial' ref={element}>
         <div className="container">
             <motion.div className="top" animate={controls} variants={TopAnimations} transition={{delay:0.4}}>
-                <Title title='Testimonials' color='blue' LineCenter={true} />
+                <Title title='The most popular doctors' color='blue' LineCenter={true} />
                 <div className={`subTitle ${theme===true ? 'darktheme' : ''}`}>
                     <p>
-                        Always stay Updated with the technologies thus  we help our clients 
-                        by giving the best solutions for their needs  
+                        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Enim vero fugiat iusto harum commodi atque culpa error minima quisquam tempore omnis.
                     </p>
                 </div>
             </motion.div>
